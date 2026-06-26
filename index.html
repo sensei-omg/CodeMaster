@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeMaster — Премиальная IT-школа №1 в России</title>
+<meta name="description" content="Стань IT-специалистом с нуля. Практические курсы по программированию, аналитике и DevOps. Гарантия трудоустройства.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">&lt;/&gt;</div>
+      <span>CodeMaster</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#directions">Направления</a>
+      <a href="#courses">Курсы</a>
+      <a href="#teachers">Преподаватели</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+79991234567" class="btn btn-ghost">+7 (999) 123-45-67</a>
+      <a href="#form" class="btn btn-primary"><span>Записаться</span></a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span>Набор на новый поток открыт · Старт 1 июля</span>
+        </div>
+        <h1>
+          Стань <span class="gradient-text">IT-специалистом</span><br>
+          с нуля до профи
+        </h1>
+        <p class="hero-subtitle">
+          Практические курсы по программированию, аналитике и DevOps от экспертов топовых компаний. 
+          Реальные проекты, менторство и гарантия трудоустройства.
+        </p>
+        <div class="hero-actions">
+          <a href="#form" class="btn btn-primary btn-lg"><span>Начать обучение →</span></a>
+          <a href="#courses" class="btn btn-ghost btn-lg">Смотреть курсы</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Выпускников</div>
+          </div>
+          <div>
+            <div class="stat-number" data-target="92" data-suffix="%">0</div>
+            <div class="stat-label">Трудоустройство</div>
+          </div>
+          <div>
+            <div class="stat-number" data-target="4.9" data-decimal="true">0</div>
+            <div class="stat-label">Средний рейтинг</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="code-header">
+            <div class="code-dot red"></div>
+            <div class="code-dot yellow"></div>
+            <div class="code-dot green"></div>
+            <div class="code-title">career.py — CodeMaster</div>
+          </div>
+          <div class="code-body">
+            <div class="code-line"><span class="line-num">1</span><span><span class="code-keyword">class</span> <span class="code-function">Developer</span>:</span></div>
+            <div class="code-line"><span class="line-num">2</span><span>&nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">__init__</span>(<span class="code-variable">self</span>):</span></div>
+            <div class="code-line"><span class="line-num">3</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">self</span>.skills <span class="code-operator">=</span> []</span></div>
+            <div class="code-line"><span class="line-num">4</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">self</span>.salary <span class="code-operator">=</span> <span class="code-string">0</span></span></div>
+            <div class="code-line"><span class="line-num">5</span><span></span></div>
+            <div class="code-line"><span class="line-num">6</span><span>&nbsp;&nbsp;<span class="code-keyword">def</span> <span class="code-function">learn</span>(<span class="code-variable">self</span>, course):</span></div>
+            <div class="code-line"><span class="line-num">7</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-variable">self</span>.skills.append(course)</span></div>
+            <div class="code-line"><span class="line-num">8</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span class="code-string">"🚀 Dream job unlocked!"</span></span></div>
+          </div>
+        </div>
+        <div class="floating-card floating-card-1">
+          <div class="fc-icon green">✓</div>
+          <div>
+            <div class="fc-title">Новый оффер</div>
+            <div class="fc-sub">+180 000 ₽ / месяц</div>
+          </div>
+        </div>
+        <div class="floating-card floating-card-2">
+          <div class="fc-icon purple">⚡</div>
+          <div>
+            <div class="fc-title">6 месяцев</div>
+            <div class="fc-sub">До первой работы в IT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTIONS -->
+<section id="directions">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Направления</span>
+      <h2 class="section-title">Выберите свой путь в IT</h2>
+      <p class="section-subtitle">4 востребованных направления с гарантированным результатом. Программа обновляется каждый квартал под актуальные требования рынка.</p>
+    </div>
+    <div class="directions-grid">
+      <div class="direction-card reveal">
+        <div class="direction-icon">💻</div>
+        <h3>Программирование</h3>
+        <p>Python, Java, C++, JavaScript — с нуля до уровня Middle-разработчика</p>
+        <div class="direction-arrow">Подробнее →</div>
+      </div>
+      <div class="direction-card reveal">
+        <div class="direction-icon">📊</div>
+        <h3>Аналитика</h3>
+        <p>Data Science, SQL, BI-инструменты, Excel и машинное обучение</p>
+        <div class="direction-arrow">Подробнее →</div>
+      </div>
+      <div class="direction-card reveal">
+        <div class="direction-icon">⚙️</div>
+        <h3>DevOps</h3>
+        <p>Docker, Kubernetes, CI/CD, облачные технологии AWS и Yandex Cloud</p>
+        <div class="direction-arrow">Подробнее →</div>
+      </div>
+      <div class="direction-card reveal">
+        <div class="direction-icon">🛡️</div>
+        <h3>Кибербезопасность</h3>
+        <p>Защита данных, этичный хакинг, аудит безопасности и пентест</p>
+        <div class="direction-arrow">Подробнее →</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Курсы</span>
+      <h2 class="section-title">Популярные программы обучения</h2>
+      <p class="section-subtitle">Программы, которые выбирают наши студенты. Все курсы включают практику на реальных проектах и менторскую поддержку.</p>
+    </div>
+    <div class="courses-tabs reveal">
+      <button class="tab-btn active" data-filter="all">Все курсы</button>
+      <button class="tab-btn" data-filter="dev">Разработка</button>
+      <button class="tab-btn" data-filter="data">Аналитика</button>
+      <button class="tab-btn" data-filter="devops">DevOps</button>
+    </div>
+    <div class="courses-grid" id="coursesGrid">
+      <!-- курсы вставлены прямо в HTML -->
+      <div class="course-card reveal" data-category="dev">
+        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop')">
+          <span class="course-badge">Хит продаж</span>
+        </div>
+        <div class="course-content">
+          <h3>Python-разработчик</h3>
+          <p>С нуля до создания веб-приложений на Django, REST API и телеграм-ботов</p>
+          <div class="course-meta">
+            <span>⏱ 6 месяцев</span>
+            <span>📚 120 часов</span>
+            <span>💼 Диплом</span>
+          </div>
+          <div class="course-footer">
+            <div>
+              <span class="course-price-old">45 000 ₽</span>
+              <span class="course-price">35 000 ₽</span>
+            </div>
+            <a href="#form" class="btn btn-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card reveal" data-category="data">
+        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop')">
+          <span class="course-badge">Новинка</span>
+        </div>
+        <div class="course-content">
+          <h3>Data Analyst</h3>
+          <p>SQL, Python, визуализация данных, Power BI и Tableau. Работа с реальными датасетами</p>
+          <div class="course-meta">
+            <span>⏱ 5 месяцев</span>
+            <span>📚 96 часов</span>
+            <span>💼 Диплом</span>
+          </div>
+          <div class="course-footer">
+            <div>
+              <span class="course-price-old">40 000 ₽</span>
+              <span class="course-price">32 000 ₽</span>
+            </div>
+            <a href="#form" class="btn btn-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card reveal" data-category="devops">
+        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop')">
+          <span class="course-badge">Premium</span>
+        </div>
+        <div class="course-content">
+          <h3>DevOps-инженер</h3>
+          <p>Docker, Kubernetes, CI/CD, Terraform, мониторинг и управление инфраструктурой</p>
+          <div class="course-meta">
+            <span>⏱ 7 месяцев</span>
+            <span>📚 140 часов</span>
+            <span>💼 Диплом</span>
+          </div>
+          <div class="course-footer">
+            <div>
+              <span class="course-price-old">52 000 ₽</span>
+              <span class="course-price">40 000 ₽</span>
+            </div>
+            <a href="#form" class="btn btn-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card reveal" data-category="dev">
+        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&h=400&fit=crop')">
+          <span class="course-badge">Frontend</span>
+        </div>
+        <div class="course-content">
+          <h3>Frontend-разработчик</h3>
+          <p>HTML, CSS, JavaScript, React, TypeScript. Создание современных интерфейсов</p>
+          <div class="course-meta">
+            <span>⏱ 6 месяцев</span>
+            <span>📚 110 часов</span>
+            <span>💼 Диплом</span>
+          </div>
+          <div class="course-footer">
+            <div>
+              <span class="course-price-old">42 000 ₽</span>
+              <span class="course-price">34 000 ₽</span>
+            </div>
+            <a href="#form" class="btn btn-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card reveal" data-category="data">
+        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&sat=-50')">
+          <span class="course-badge">ML</span>
+        </div>
+        <div class="course-content">
+          <h3>Data Scientist</h3>
+          <p>Машинное обучение, нейросети, NLP, компьютерное зрение и MLOps</p>
+          <div class="course-meta">
+            <span>⏱ 9 месяцев</span>
+            <span>📚 180 часов</span>
+            <span>💼 Диплом</span>
+          </div>
+          <div class="course-footer">
+            <div>
+              <span class="course-price-old">65 000 ₽</span>
+              <span class="course-price">48 000 ₽</span>
+            </div>
+            <a href="#form" class="btn btn-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+      <div class="course-card reveal" data-category="devops">
+        <div class="course-image" style="background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop')">
+          <span class="course-badge">Cloud</span>
+        </div>
+        <div class="course-content">
+          <h3>Cloud Architect</h3>
+          <p>Архитектура облачных решений, AWS, Yandex Cloud, микросервисы</p>
+          <div class="course-meta">
+            <span>⏱ 8 месяцев</span>
+            <span>📚 160 часов</span>
+            <span>💼 Диплом</span>
+          </div>
+          <div class="course-footer">
+            <div>
+              <span class="course-price-old">58 000 ₽</span>
+              <span class="course-price">45 000 ₽</span>
+            </div>
+            <a href="#form" class="btn btn-primary">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<section id="teachers">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Преподаватели</span>
+      <h2 class="section-title">Практики из топовых компаний</h2>
+      <p class="section-subtitle">Наши менторы — действующие специалисты с опытом 7+ лет в индустрии. Они делятся реальным опытом, а не теорией из учебников.</p>
+    </div>
+    <div class="teachers-grid">
+      <div class="teacher-card reveal">
+        <div class="teacher-avatar" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=240&h=240&fit=crop')"></div>
+        <h3>Алексей Смирнов</h3>
+        <div class="teacher-role">Senior Python Developer</div>
+        <div class="teacher-company">🏢 Yandex · 10 лет опыта</div>
+        <div class="teacher-tags">
+          <span class="teacher-tag">Python</span>
+          <span class="teacher-tag">Django</span>
+          <span class="teacher-tag">FastAPI</span>
+        </div>
+      </div>
+      <div class="teacher-card reveal">
+        <div class="teacher-avatar" style="background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=240&h=240&fit=crop')"></div>
+        <h3>Екатерина Волкова</h3>
+        <div class="teacher-role">Head of Analytics</div>
+        <div class="teacher-company">🏢 Tinkoff · 7 лет опыта</div>
+        <div class="teacher-tags">
+          <span class="teacher-tag">Data Science</span>
+          <span class="teacher-tag">ML</span>
+          <span class="teacher-tag">SQL</span>
+        </div>
+      </div>
+      <div class="teacher-card reveal">
+        <div class="teacher-avatar" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=240&h=240&fit=crop')"></div>
+        <h3>Дмитрий Петров</h3>
+        <div class="teacher-role">Tech Lead DevOps</div>
+        <div class="teacher-company">🏢 VK · 8 лет опыта</div>
+        <div class="teacher-tags">
+          <span class="teacher-tag">Docker</span>
+          <span class="teacher-tag">K8s</span>
+          <span class="teacher-tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Отзывы</span>
+      <h2 class="section-title">Истории успеха наших студентов</h2>
+      <p class="section-subtitle">Более 500 выпускников уже работают в топовых IT-компаниях России и мира</p>
+    </div>
+    <div class="reviews-wrapper reveal">
+      <div class="reviews-track" id="reviewsTrack">
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">За 6 месяцев прошёл путь от полного нуля до джуниора. Сейчас работаю в IT-компании на отличной зарплате. CodeMaster — лучшая инвестиция в себя!</p>
+          <div class="review-author">
+            <div class="review-avatar">А</div>
+            <div>
+              <div class="review-name">Анна Соколова</div>
+              <div class="review-position">Python-разработчик · Ozon</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Лучшие курсы по аналитике. Преподаватели объясняют сложные вещи простым языком. Менторская поддержка — на высшем уровне. Рекомендую всем!</p>
+          <div class="review-author">
+            <div class="review-avatar">И</div>
+            <div>
+              <div class="review-name">Игорь Морозов</div>
+              <div class="review-position">Data Analyst · Sber</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">DevOps-курс — это бомба! Реальные проекты, практика, обратная связь 24/7. Уже через месяц после выпуска получил оффер мечты.</p>
+          <div class="review-author">
+            <div class="review-avatar">О</div>
+            <div>
+              <div class="review-name">Ольга Кузнецова</div>
+              <div class="review-position">DevOps Engineer · Avito</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Пришёл без технического бэкграунда, а через 8 месяцев уже работал frontend-разработчиком. Программа очень структурированная и насыщенная.</p>
+          <div class="review-author">
+            <div class="review-avatar">М</div>
+            <div>
+              <div class="review-name">Михаил Лебедев</div>
+              <div class="review-position">Frontend Developer · MTS</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">Курс по Data Science превзошёл все ожидания. Реальные кейсы, работа с большими данными, помощь в составлении резюме. Спасибо команде!</p>
+          <div class="review-author">
+            <div class="review-avatar">Е</div>
+            <div>
+              <div class="review-name">Елена Новикова</div>
+              <div class="review-position">Data Scientist · Wildberries</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-controls">
+        <button class="review-btn" id="prevReview" aria-label="Назад">←</button>
+        <button class="review-btn" id="nextReview" aria-label="Вперёд">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Преимущества</span>
+      <h2 class="section-title">Почему выбирают CodeMaster</h2>
+      <p class="section-subtitle">Мы готовим специалистов, которые реально нужны рынку. Никакой воды — только практика и результат.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🎓</div>
+        <h3>Экспертная программа</h3>
+        <p>Программа разработана экспертами с опытом 5+ лет в топовых IT-компаниях</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">👥</div>
+        <h3>Индивидуальный подход</h3>
+        <p>Персональный ментор и адаптация программы под ваш темп обучения</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">💼</div>
+        <h3>Гарантия трудоустройства</h3>
+        <p>Помощь в составлении резюме, подготовка к собеседованиям и оффер</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🌐</div>
+        <h3>Закрытое сообщество</h3>
+        <p>Доступ к нетворкингу выпускников и внутренним вакансиям компаний-партнёров</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Частые вопросы</h2>
+      <p class="section-subtitle">Ответы на самые популярные вопросы о нашем обучении</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Нужен ли опыт в программировании для поступления?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Нет, наши курсы рассчитаны на студентов с нулевым опытом. Мы начинаем с самых основ и постепенно переходим к сложным темам. Главное — ваше желание учиться и готовность уделять занятиям 10-15 часов в неделю.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Сколько длится обучение и какой формат?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Обучение длится от 5 до 9 месяцев в зависимости от направления. Формат — смешанный: видеолекции, которые можно смотреть в удобное время, плюс живые вебинары с преподавателями 2 раза в неделю. Все материалы остаются у вас навсегда.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Как работает гарантия трудоустройства?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Мы помогаем с составлением резюме, подготовкой к техническим собеседованиям и предоставляем доступ к вакансиям наших компаний-партнёров. Если в течение 3 месяцев после выпуска вы не найдёте работу — мы вернём деньги за курс или предложим бесплатное обучение на другом направлении.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Можно ли оплатить обучение в рассрочку?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Да, мы предлагаем рассрочку от наших банков-партнёров на 6, 12 или 24 месяца без переплат. Также доступна оплата поэтапно — вы платите за каждый модуль отдельно. Первый платёж — после начала обучения.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Какой документ я получу после окончания?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">После успешной защиты выпускного проекта вы получаете диплом CodeMaster о профессиональной переподготовке, а также сертификат с перечнем изученных технологий. Наши дипломы признаются компаниями-партнёрами при трудоустройстве.</div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Что если мне не подойдёт курс?</span>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">В течение первых 14 дней вы можете вернуть полную стоимость курса без объяснения причин. Мы уверены в качестве нашего обучения, поэтому даём такую гарантию. Также можно сменить направление в течение первого месяца бесплатно.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form" class="form-section">
+  <div class="container">
+    <div class="form-wrapper reveal">
+      <div class="form-info">
+        <span class="section-tag">Заявка</span>
+        <h2>Запишитесь на бесплатную консультацию</h2>
+        <p>Наш менеджер свяжется с вами в течение 15 минут, ответит на все вопросы и поможет выбрать подходящий курс под ваши цели.</p>
+        <div class="form-perks">
+          <div class="perk">
+            <div class="perk-icon">🎁</div>
+            <span>Бесплатный вводный урок при записи сегодня</span>
+          </div>
+          <div class="perk">
+            <div class="perk-icon">💰</div>
+            <span>Скидка 20% на любой курс до конца месяца</span>
+          </div>
+          <div class="perk">
+            <div class="perk-icon">📞</div>
+            <span>Персональная консультация с ментором</span>
+          </div>
+          <div class="perk">
+            <div class="perk-icon">🚀</div>
+            <span>Рассрочка 0% на 24 месяца</span>
+          </div>
+        </div>
+      </div>
+      <form class="form-card" id="applicationForm">
+        <div class="form-group">
+          <label class="form-label" for="name">Ваше имя</label>
+          <input type="text" id="name" class="form-input" placeholder="Иван Иванов" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">Телефон</label>
+          <input type="tel" id="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="course">Направление</label>
+          <select id="course" class="form-select" required>
+            <option value="">Выберите направление</option>
+            <option value="python" data-price="35000">Python-разработчик · 35 000 ₽</option>
+            <option value="data" data-price="32000">Data Analyst · 32 000 ₽</option>
+            <option value="devops" data-price="40000">DevOps-инженер · 40 000 ₽</option>
+            <option value="frontend" data-price="34000">Frontend-разработчик · 34 000 ₽</option>
+            <option value="ds" data-price="48000">Data Scientist · 48 000 ₽</option>
+            <option value="cloud" data-price="45000">Cloud Architect · 45 000 ₽</option>
+          </select>
+        </div>
+        <div class="calculator" id="calculator" style="display: none;">
+          <div class="calc-row">
+            <span class="calc-label">Стоимость курса</span>
+            <span class="calc-value" id="calcBase">0 ₽</span>
+          </div>
+          <div class="calc-row">
+            <span class="calc-label">Скидка 20%</span>
+            <span class="calc-value" id="calcDiscount" style="color: #10b981;">-0 ₽</span>
+          </div>
+          <div class="calc-row">
+            <span class="calc-label">Рассрочка на 12 мес.</span>
+            <span class="calc-value" id="calcInstallment">0 ₽/мес</span>
+          </div>
+          <div class="calc-total">
+            <span class="calc-total-label">Итого:</span>
+            <span class="calc-total-value" id="calcTotal">0 ₽</span>
+          </div>
+        </div>
+        <label class="form-checkbox">
+          <input type="checkbox" required>
+          <span>Я согласен с <a href="#">политикой конфиденциальности</a> и обработкой персональных данных</span>
+        </label>
+        <button type="submit" class="btn btn-primary btn-full btn-lg"><span>Отправить заявку →</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Контакты</span>
+      <h2 class="section-title">Всегда на связи</h2>
+      <p class="section-subtitle">Выберите удобный способ связи — мы ответим в течение 15 минут в рабочее время</p>
+    </div>
+    <div class="contacts-grid">
+      <a href="tel:+79991234567" class="contact-card reveal">
+        <div class="contact-icon">📞</div>
+        <div class="contact-label">Телефон</div>
+        <div class="contact-value">+7 (999) 123-45-67</div>
+      </a>
+      <a href="mailto:info@codemaster.ru" class="contact-card reveal">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-label">Email</div>
+        <div class="contact-value">info@codemaster.ru</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-mark">&lt;/&gt;</div>
+          <span>CodeMaster</span>
+        </a>
+        <p>IT-школа нового поколения. Готовим специалистов, которые меняют индустрию. Присоединяйтесь к сообществу из 500+ выпускников.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Telegram">✈️</a>
+          <a href="#" class="social-link" aria-label="VK">🅥</a>
+          <a href="#" class="social-link" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#courses">Курсы</a></li>
+          <li><a href="#teachers">Преподаватели</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Направления</h4>
+        <ul>
+          <li><a href="#">Программирование</a></li>
+          <li><a href="#">Аналитика</a></li>
+          <li><a href="#">DevOps</a></li>
+          <li><a href="#">Кибербезопасность</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul>
+          <li>📞 +7 (999) 123-45-67</li>
+          <li>✉️ info@codemaster.ru</li>
+          <li>🕐 Пн–Пт: 10:00 – 20:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 CodeMaster. Все права защищены</div>
+      <div>
+        <a href="#" style="color: var(--text-muted); text-decoration: none; margin-right: 20px;">Политика конфиденциальности</a>
+        <a href="#" style="color: var(--text-muted); text-decoration: none;">Оферта</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+<div class="toast" id="toast">
+  <div class="toast-icon">✓</div>
+  <div class="toast-content">
+    <h4>Заявка отправлена!</h4>
+    <p>Мы свяжемся с вами в течение 15 минут</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
